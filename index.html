@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./CSS/styles.css">
     <title>Calculator</title>
 </head>
 <body>
@@ -16,54 +16,55 @@
                 </td>
             </tr>
             <tr>
-                <td><input type="button" value="1" onclick="display.value += '1'"></td>
-                <td><input type="button" value="2" onclick="display.value += '2'"></td>
-                <td><input type="button" value="3" onclick="display.value += '3'"></td>
-                <td><input type="button" value="C" onclick="display.value = ''"></td>
-                <td><input type="button" value="&#9003;" onclick="backspace()"></td>
-                <td><input type="button" value="=" onclick="calculate()"></td>
+                <td><input type="button" value="1" id="btn1"></td>
+                <td><input type="button" value="2" id="btn2"></td>
+                <td><input type="button" value="3" id="btn3"></td>
+                <td><input type="button" value="C" id="btn4"></td>
+                <td><input type="button" value="⌫" id="btn5"></td>
+                <td><input type="button" value="=" id="btn6"></td>
             </tr>
             <tr>
-                <td><input type="button" value="4" onclick="display.value += '4'"></td>
-                <td><input type="button" value="5" onclick="display.value += '5'"></td>
-                <td><input type="button" value="6" onclick="display.value += '6'"></td>
-                <td><input type="button" value="-" onclick="display.value += '-'"></td>
-                <td><input type="button" value="%" onclick="display.value += '%'"></td>
-                <td><input type="button" value="cos(" onclick="display.value += 'cos('"></td>
+                <td><input type="button" value="4" id="btn7"></td>
+                <td><input type="button" value="5" id="btn8"></td>
+                <td><input type="button" value="6" id="btn9"></td>
+                <td><input type="button" value="-" id="btn10"></td>
+                <td><input type="button" value="%" id="btn11"></td>
+                <td><input type="button" value="cos()" id="btn12"> </td>
             </tr>
             <tr>
-                <td><input type="button" value="7" onclick="display.value += '7'"></td>
-                <td><input type="button" value="8" onclick="display.value += '8'"></td>
-                <td><input type="button" value="9" onclick="display.value += '9'"></td>
-                <td><input type="button" value="x" onclick="display.value += '*'"></td>
-                <td><input type="button" value="!" onclick="display.value += '!'"></td>
-                <td><input type="button" value="sin(" onclick="display.value += 'sin('"></td>
+                <td><input type="button" value="7" id="btn13"></td>
+                <td><input type="button" value="8" id="btn14"></td>
+                <td><input type="button" value="9" id="btn15"></td>
+                <td><input type="button" value="x" id="btn16"></td>
+                <td><input type="button" value="!" id=btn17></td>
+                <td><input type="button" value="sin(" id="btn18"></td>
             </tr>
             <tr>
-                <td><input type="button" value="." onclick="display.value += '.'"></td>
-                <td><input type="button" value="0" onclick="display.value += '0'"></td>
-                <td><input type="button" value="," onclick="display.value += ','"></td>
-                <td><input type="button" value="+" onclick="display.value += '+'"></td>
-                <td><input type="button" value="/" onclick="display.value += '/'"></td>
-                <td><input type="button" value="tan(" onclick="display.value += 'tan('"></td>
+                <td><input type="button" value="." id="btn19"></td>
+                <td><input type="button" value="0" id="btn20"></td>
+                <td><input type="button" value="," id="btn21"></td>
+                <td><input type="button" value="+" id="btn22"></td>
+                <td><input type="button" value="/" id="btn23"></td>
+                <td><input type="button" value="tan(" id="btn24"></td>
             </tr>
             <tr>
-                <td><input type="button" value="E" onclick="e()"></td>
-                <td><input type="button" value="pi" onclick="pi()"></td>
-                <td><input type="button" value="^" onclick="power()"></td>
-                <td><input type="button" value="(" onclick="display.value += '('"></td>
-                <td><input type="button" value=")" onclick="display.value += ')'"></td>
-                <td><input type="button" value="log(" onclick="base10Log()"></td>
+                <td><input type="button" value="E" id="btn25"></td>
+                <td><input type="button" value="π" id="btn26"></td>
+                <td><input type="button" value="^" id="btn27"></td>
+                <td><input type="button" value="(" id="btn28"></td>
+                <td><input type="button" value=")" id="btn29"></td>
+                <td><input type="button" value="log(" id="btn30"></td>
             </tr>
             <tr>
-                <td><input type="button" value="sqrt(" onclick="squareRoot()"></td>
-                <td><input type="button" value="ln2" onclick="display.value += Math.LN2"></td>
-                <td><input type="button" value="log10(" onclick="base10Log()"></td>
-                <td><input type="button" value="l2e" onclick="display.value += Math.LOG2E"></td>
-                <td><input type="button" value="l10e" onclick="display.value += Math.LOG10E"></td>
-                <td><input type="button" value="exp(" onclick="display.value += 'exp('"></td>
+                <td><input type="button" value="sqrt(" id="btn31"></td>
+                <td><input type="button" value="ln2" id="btn32"></td>
+                <td><input type="button" value="log10(" id="btn33"></td>
+                <td><input type="button" value="l2e" id="btn34"></td>
+                <td><input type="button" value="l10e" id="btn35"></td>
+                <td><input type="button" value="exp(" id="btn36"></td>
             </tr>
         </table>
     </form>
+    <script src="./script/calculator.js"></script>
 </body>
 </html>
